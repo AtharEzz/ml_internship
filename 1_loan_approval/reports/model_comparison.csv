@@ -1,0 +1,6 @@
+Model,F1_Rejected,Recall_Rejected,Precision_Rejected,Accuracy,Notes
+Logistic Regression (Baseline),0.77,0.71,0.84,0.87,Scaled + Threshold=0.45
+XGBoost (Tuned),0.74,0.61,0.96,0.87,GridSearchCV tuned
+Random Forest (Default),0.73,0.63,0.86,0.85,Default hyperparameters
+Random Forest (Tuned),0.72,0.61,0.88,0.85,GridSearchCV tuned
+XGBoost (Default),0.68,0.68,0.68,0.8,"Unscaled, scale_pos_weight"
