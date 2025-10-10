@@ -288,7 +288,7 @@ pip install streamlit
 streamlit run app.py
 
 # Access in browser
-http://localhost:8501
+https://mlinternship-7f3q3zszwfvfmkti7rkkxn.streamlit.app/
 ```
 
 #### Interface Preview
