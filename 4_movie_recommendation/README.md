@@ -1,9 +1,9 @@
-# 🎬 Movie Recommendation System
+# Movie Recommendation System
 ## Comparative Analysis of Collaborative Filtering and Matrix Factorization
 
 ---
 
-## 📌 Executive Summary
+##  Executive Summary
 
 This project implements and compares three state-of-the-art recommendation algorithms using the MovieLens 100K dataset. The system predicts user preferences and recommends unwatched movies based on historical rating patterns. **Matrix Factorization (SVD) achieved the best performance with a Precision@5 of 0.130**, outperforming traditional collaborative filtering approaches.
 
@@ -15,7 +15,7 @@ This project implements and compares three state-of-the-art recommendation algor
 
 ---
 
-## 🎯 Project Overview
+##  Project Overview
 
 ### Objectives
 1. Implement multiple recommendation algorithms from scratch
@@ -32,7 +32,7 @@ This project implements and compares three state-of-the-art recommendation algor
 
 ---
 
-## 🛠️ Technologies & Libraries
+##  Technologies & Libraries
 
 | Technology | Purpose | Version |
 |------------|---------|---------|
@@ -46,7 +46,7 @@ This project implements and compares three state-of-the-art recommendation algor
 
 ---
 
-## 🧩 Methodology
+##  Methodology
 
 ### 1. User-Based Collaborative Filtering
 
@@ -138,13 +138,13 @@ This project implements and compares three state-of-the-art recommendation algor
    - Ranked by predicted rating (top-N selection)
 
 #### Results
-- **Precision@5:** 0.130 ✅ **Best Performance**
+- **Precision@5:** 0.130  **Best Performance**
 - **Strengths:** Captures latent factors, handles sparsity well, scalable
 - **Weaknesses:** Less interpretable, requires hyperparameter tuning
 
 ---
 
-## 📊 Evaluation Protocol
+##  Evaluation Protocol
 
 ### Data Split Strategy
 ```
@@ -182,15 +182,15 @@ Precision@5 = (# of movies in top-5 with rating ≥4 in test set) / 5
 
 ---
 
-## 📈 Results & Comparison
+##  Results & Comparison
 
 ### Performance Summary
 
 | Model | Precision@5 | Relative Performance | Key Advantage |
 |-------|-------------|---------------------|---------------|
-| **SVD (Matrix Factorization)** | **0.130** | 🥇 Baseline +8.3% | Latent factor learning |
-| **User-Based CF** | **0.120** | 🥈 Strong baseline | High interpretability |
-| **Item-Based CF** | **0.050** | 🥉 Needs improvement | Stable for new users |
+| **SVD (Matrix Factorization)** | **0.130** |  Baseline +8.3% | Latent factor learning |
+| **User-Based CF** | **0.120** |  Strong baseline | High interpretability |
+| **Item-Based CF** | **0.050** |  Needs improvement | Stable for new users |
 
 ### Visual Comparison
 
@@ -210,7 +210,7 @@ Item-Based CF       ██████           0.050
 
 ---
 
-## 🔍 Key Insights & Learnings
+##  Key Insights & Learnings
 
 ### 1. Normalization is Critical
 **Finding:** User mean normalization significantly improved CF performance.
@@ -237,7 +237,7 @@ Item-Based CF       ██████           0.050
 | Epochs | Precision@5 | RMSE | Observation |
 |--------|-------------|------|-------------|
 | 5 | 0.115 | 0.952 | Underfitting |
-| **10** | **0.130** | **0.934** | ✅ Optimal |
+| **10** | **0.130** | **0.934** |  Optimal |
 | 15 | 0.125 | 0.928 | Starting to overfit |
 | 20 | 0.118 | 0.925 | Overfitting |
 
@@ -248,13 +248,13 @@ Item-Based CF       ██████           0.050
 
 **n_factors Analysis:**
 - 50 factors: Underfitting (Precision@5 = 0.110)
-- **100 factors: Optimal (Precision@5 = 0.130)** ✅
+- **100 factors: Optimal (Precision@5 = 0.130)** 
 - 150 factors: Marginal gain (Precision@5 = 0.132)
 - 200 factors: Overfitting (Precision@5 = 0.125)
 
 **Regularization Analysis:**
 - 0.01: Slight overfitting (Precision@5 = 0.125)
-- **0.02: Optimal (Precision@5 = 0.130)** ✅
+- **0.02: Optimal (Precision@5 = 0.130)** 
 - 0.05: Too much regularization (Precision@5 = 0.115)
 
 **Lesson:** Optimal complexity depends on data size and sparsity. More isn't always better.
@@ -269,7 +269,7 @@ Item-Based CF       ██████           0.050
 
 ---
 
-## 💻 Web Application (Bonus)
+##  Web Application (Bonus)
 
 ### Streamlit Interactive Demo
 
@@ -291,28 +291,7 @@ streamlit run app.py
 https://mlinternship-7f3q3zszwfvfmkti7rkkxn.streamlit.app/
 ```
 
-#### Interface Preview
-```
-╔══════════════════════════════════════════╗
-║   🎬 Movie Recommendation System        ║
-╠══════════════════════════════════════════╣
-║                                          ║
-║  Select User: [Dropdown: User 1]  ▼     ║
-║                                          ║
-║  [ Get Recommendations ]                 ║
-║                                          ║
-║  Top 5 Recommendations:                  ║
-║  ┌────────────────────────────────────┐  ║
-║  │ 1. The Shawshank Redemption        │  ║
-║  │    Predicted Rating: 4.8 ⭐        │  ║
-║  ├────────────────────────────────────┤  ║
-║  │ 2. The Godfather                   │  ║
-║  │    Predicted Rating: 4.7 ⭐        │  ║
-║  └────────────────────────────────────┘  ║
-╚══════════════════════════════════════════╝
-```
 
----
 
 ## Implementation Details
 
@@ -337,11 +316,11 @@ movie_recommendation/
 ## Conclusions 
 
 ### Key Achievements
-✅ Implemented three different recommendation algorithms from scratch  
-✅ Rigorous evaluation with industry-standard metrics  
-✅ Hyperparameter tuning for optimal performance  
-✅ Interactive web application for practical demonstration  
-✅ Comprehensive documentation and reproducible results  
+ Implemented three different recommendation algorithms from scratch  
+ Rigorous evaluation with industry-standard metrics  
+ Hyperparameter tuning for optimal performance  
+ Interactive web application for practical demonstration  
+ Comprehensive documentation and reproducible results  
 
 ### Best Practices Demonstrated
 1. **Data Splitting:** Consistent train/test methodology
