@@ -10,7 +10,9 @@ def load_model():
     current_dir = os.path.dirname(os.path.abspath(__file__))
     model_path = os.path.join(current_dir, 'svd_model.pkl')
     
-    with open('svd_model.pkl', 'rb') as f:
+    # with open('svd_model.pkl', 'rb') as f:
+    with open(model_path, 'rb') as f:
+
         # return pickle.load(f)
         svd= pickle.load(f)
 
