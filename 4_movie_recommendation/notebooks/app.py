@@ -4,11 +4,13 @@ import pandas as pd
 import pickle
 from surprise import SVD
 
-# CURRENT_DIR = os.path.dirname(os.path.abspath(__file__))
-current_dir= os.path.dirname(os.path.abspath(__file__))
+CURRENT_DIR = os.path.dirname(os.path.abspath(__file__))
+# current_dir= os.path.dirname(os.path.abspath(__file__))
 def load_model():
     # current_dir = os.path.dirname(os.path.abspath(__file__))
-    model_path = os.path.join(current_dir, 'svd_model.pkl')
+    # model_path = os.path.join(current_dir, 'svd_model.pkl')
+     model_path = os.path.join(CURRENT_DIR, 'svd_model.pkl')
+
     
     # with open('svd_model.pkl', 'rb') as f:
     with open(model_path, 'rb') as f:
