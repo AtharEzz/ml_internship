@@ -19,9 +19,18 @@ def load_model():
     return svd 
 
 
+# def load_data():
+    # train_ratings = pd.read_pickle('train_ratings.pkl')
+    # movies = pd.read_pickle('movies.pkl')
+    # return train_ratings, movies
+    
 def load_data():
-    train_ratings = pd.read_pickle('train_ratings.pkl')
-    movies = pd.read_pickle('movies.pkl')
+    train_ratings_path = os.path.join(CURRENT_DIR, 'train_ratings.pkl')
+    movies_path = os.path.join(CURRENT_DIR, 'movies.pkl')
+    
+    train_ratings = pd.read_pickle(train_ratings_path)
+    movies = pd.read_pickle(movies_path)
+    
     return train_ratings, movies
 
 # Load model
