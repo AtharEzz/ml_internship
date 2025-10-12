@@ -106,7 +106,7 @@ with open('reports/feature_names.json') as f:
 
 ### Performance Metrics
 - **Final MAE**: $1,408.34 (13.2% improvement over baseline)
-- **Final RMSE**: $3,015.89
+- **Final RMSE**: $3,018.56
 - **Model**: XGBoost + Rolling Features + Early Stopping
 
 ### Model Comparison
