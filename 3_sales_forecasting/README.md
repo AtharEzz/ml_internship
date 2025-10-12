@@ -112,9 +112,9 @@ with open('reports/feature_names.json') as f:
 ### Model Comparison
 The iterative development process showed consistent improvement:
 
-![MAE vs RMSE Performance Tracking](../reports/MAE%20vs%20RMSE%20performance%20tracking.png)
+![MAE vs RMSE Performance Tracking](../reports/MAE_vs_RMSE_performance_tracking.png)
 
-![MAE Improvement vs Baseline](../reports/MAE%20Improvement%20vs%20Baseline.png)
+![MAE Improvement vs Baseline](../reports/MAE_Improvement_vs_Baseline.png)
 
 | Model | MAE ($) | RMSE ($) | Improvement vs Baseline |
 |-------|---------|----------|------------------------|
@@ -133,7 +133,7 @@ The model successfully captures:
 
 ---
 
-## Key Learnings
+##  Key Learnings
 - **Time-series integrity is non-negotiable**: Lag features must be group-wise and never break temporal order
 - **XGBoost + early stopping outperforms Random Forest** for tabular forecasting
 - **Rolling features add meaningful signal** beyond simple lags
