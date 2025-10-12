@@ -1,0 +1,15 @@
+{
+  "model_version": "v1",
+  "training_date": "2025-10-12T17:48:14.415407",
+  "train_period": [
+    "2010-02-19",
+    "2011-12-30"
+  ],
+  "val_period": [
+    "2012-01-06",
+    "2012-10-26"
+  ],
+  "final_mae": 1408.34,
+  "final_rmse": 3018.56,
+  "model_type": "XGBoost with early stopping"
+}
