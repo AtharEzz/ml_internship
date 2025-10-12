@@ -112,6 +112,8 @@ with open('reports/feature_names.json') as f:
 ### Model Comparison
 The iterative development process showed consistent improvement:
 
+![Actual vs Predicted Sales](./reports/actual_vs_predicted.png)
+
 ![MAE vs RMSE Performance Tracking](./reports/MAE_vs_RMSE_performance_tracking.png)
 
 ![MAE Improvement vs Baseline](./reports/MAE_Improvement_vs_Baseline.png)
@@ -123,7 +125,6 @@ The iterative development process showed consistent improvement:
 | XGBoost + Rolling Features | 1,444.46 | 3,136.78 | 11.1% |
 | **XGBoost + Rolling + Early Stopping** | **1,408.34** | **3,015.89** | **13.2%** |
 
-![Actual vs Predicted Sales](./reports/actual_vs_predicted.png)
 
 ### Prediction Quality
 The model successfully captures:
