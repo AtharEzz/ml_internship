@@ -1,5 +1,5 @@
 # Walmart Weekly Sales Forecasting  
-**Internship Task 7 — Elevvo MLOps Track**  
+
 *Predict future sales using historical data with time-aware modeling*
 
 ---
