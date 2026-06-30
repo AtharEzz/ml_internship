@@ -6,7 +6,7 @@ Hands-on machine learning projects completed during a Machine Learning Internshi
 
 | # | Project | Problem | Approach | Result |
 |---|---------|---------|----------|--------|
-| 1 | [Loan Approval Prediction](./1_loan_approval) | Predict loan default risk on an imbalanced banking dataset | Synthetic oversampling to address class imbalance, classification modeling | F1-score: 0.77, Recall: 0.71 |
+| 1 | [Loan Approval Prediction](./1_loan_approval) | Predict loan default risk on an imbalanced banking dataset | Compared ensemble methods and synthetic oversampling; selected a threshold-tuned Logistic Regression model for interpretability | F1-score: 0.77, Recall: 0.71 |
 | 2 | [Customer Segmentation](./2_customer_segmentation) | Identify distinct customer groups for targeted marketing | K-Means clustering on customer behavioral data | 5 distinct, actionable customer personas |
 | 3 | [Sales Forecasting](./3_sales_forecasting) | Forecast sales on time-series retail data | XGBoost pipeline, compared against a Random Forest baseline | 13.2% reduction in MAE vs. baseline |
 | 4 | [Movie Recommendation System](./4_movie_recommendation) | Recommend relevant movies to users | SVD-based recommender vs. standard collaborative filtering | 160% improvement in Precision@5 |
