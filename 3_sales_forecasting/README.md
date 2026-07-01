@@ -120,7 +120,7 @@ The iterative development process showed consistent improvement:
 
 | Model | MAE ($) | RMSE ($) | Improvement vs Baseline |
 |-------|---------|----------|------------------------|
-| Random Forest (Baseline) | 1,624.73 | 3,597.12 | 0.0% |
+| Random Forest (Baseline) | 1,621.91 | 3,596.41 | 0.0% |
 | XGBoost | 1,476.93 | 3,270.45 | 9.1% |
 | XGBoost + Rolling Features | 1,444.46 | 3,136.78 | 11.1% |
 | **XGBoost + Rolling + Early Stopping** | **1,408.34** | **3,015.89** | **13.2%** |
