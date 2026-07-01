@@ -23,19 +23,29 @@ Three model configurations were built and compared:
 
 **2. Custom CNN + Data Augmentation**
 - Same architecture as above
-- Added random horizontal flip, brightness, and contrast augmentation to training data
-- Evaluated impact of augmentation on generalization
+- Added random horizontal flip, brightness, and contrast augmentation to training data only
 
 **3. MobileNetV2 (Transfer Learning)**
 - Pre-trained MobileNetV2 backbone (frozen weights, ImageNet)
 - Input resized to 224×224 to match MobileNet requirements
 - Added GlobalAveragePooling + Dropout (0.2) + Dense (43 classes) head
 
+## Results
+
+| Model | Val Accuracy (Epoch 10) | Test Accuracy |
+|---|---|---|
+| Custom CNN | 97.21% | **91.96%** |
+| Custom CNN + Augmentation | 98.60% | 93.59% |
+| MobileNetV2 Transfer Learning | 89.80% | 79.71% |
+
+**Notable finding:** The custom CNN outperformed MobileNetV2 on test accuracy (91.96% vs 79.71%). The likely explanation: MobileNetV2 weights were frozen (not fine-tuned), so the pre-trained ImageNet features did not adapt well to the specific visual characteristics of traffic signs. The custom CNN, trained end-to-end on this dataset, learned task-specific features that generalized better to the test set. Fine-tuning MobileNetV2 (unfreezing some layers) would likely close or reverse this gap.
+
 ## Key Implementation Details
 
 - ROI cropping applied before resizing (preserving sign region, not background)
 - Stratified train/validation split to preserve class distribution
 - `tf.data` pipeline with `AUTOTUNE` prefetching for training efficiency
+- Augmentation applied to training data only — not to validation or test sets
 - Training/validation accuracy curves compared across all three models
 
 ## Tools & Libraries
