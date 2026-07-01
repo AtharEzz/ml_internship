@@ -34,7 +34,7 @@ Three model configurations were built and compared:
 
 | Model | Val Accuracy (Epoch 10) | Test Accuracy |
 |---|---|---|
-| Custom CNN | 97.21% | **91.96%** |
+| Custom CNN | 97.21% | 91.96% |
 | Custom CNN + Augmentation | 98.60% | 93.59% |
 | MobileNetV2 Transfer Learning | 89.80% | 79.71% |
 
